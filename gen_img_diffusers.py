@@ -111,7 +111,7 @@ SCHEDULER_TIMESTEPS = 1000
 SCHEDLER_SCHEDULE = "scaled_linear"
 
 # その他の設定
-LATENT_CHANNELS = 9
+LATENT_CHANNELS = 4
 DOWNSAMPLING_FACTOR = 8
 
 # CLIP_ID_L14_336 = "openai/clip-vit-large-patch14-336"
@@ -2358,7 +2358,7 @@ def main(args):
             block_out_channels=(128, 256, 512, 512),
             down_block_types=["DownEncoderBlock2D", "DownEncoderBlock2D", "DownEncoderBlock2D", "DownEncoderBlock2D"],
             in_channels=3,
-            latent_channels=9,
+            latent_channels=4,
             layers_per_block=2,
             norm_num_groups=32,
             out_channels=3,
